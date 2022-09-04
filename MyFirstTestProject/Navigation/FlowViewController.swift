@@ -39,9 +39,10 @@ private extension FlowViewController {
         let emailedNewsVC = navigator.addInstantiateEmailedNewsVC()
         let sharedNewsVC = navigator.addInstantiateSharedNewsVC()
         let viewedNewsVC = navigator.addInstantiateViewedNewsVC()
+        let favoritesVC = navigator.addInstantiateFavoritesNewsVC()
         
         tabBarVC.delegate = self
-        tabBarVC.viewControllers = [emailedNewsVC, sharedNewsVC, viewedNewsVC]
+        tabBarVC.viewControllers = [emailedNewsVC, sharedNewsVC, viewedNewsVC, favoritesVC]
         tabBarVC.tabBar.tintColor = .black
         //tabBarVC.tabBar.unselectedItemTintColor = .red
         

@@ -24,6 +24,9 @@
 		518A597D28C4EDA200074682 /* ViewedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A597B28C4EDA200074682 /* ViewedNewsViewController.swift */; };
 		518A597E28C4EDA200074682 /* ViewedNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518A597C28C4EDA200074682 /* ViewedNewsViewController.xib */; };
 		518A598028C4EDBB00074682 /* ViewedNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A597F28C4EDBB00074682 /* ViewedNewsPresenter.swift */; };
+		518A598428C4F1D000074682 /* FavoritesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A598228C4F1D000074682 /* FavoritesNewsViewController.swift */; };
+		518A598528C4F1D000074682 /* FavoritesNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518A598328C4F1D000074682 /* FavoritesNewsViewController.xib */; };
+		518A598728C4F1E800074682 /* FavoritesNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A598628C4F1E800074682 /* FavoritesNewsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		518A597B28C4EDA200074682 /* ViewedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedNewsViewController.swift; sourceTree = "<group>"; };
 		518A597C28C4EDA200074682 /* ViewedNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedNewsViewController.xib; sourceTree = "<group>"; };
 		518A597F28C4EDBB00074682 /* ViewedNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedNewsPresenter.swift; sourceTree = "<group>"; };
+		518A598228C4F1D000074682 /* FavoritesNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNewsViewController.swift; sourceTree = "<group>"; };
+		518A598328C4F1D000074682 /* FavoritesNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesNewsViewController.xib; sourceTree = "<group>"; };
+		518A598628C4F1E800074682 /* FavoritesNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNewsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				518A596728C4837D00074682 /* EmailedNewsScreen */,
 				518A597328C4E75400074682 /* SharedNewsScreen */,
 				518A597A28C4ED5600074682 /* ViewedNewsScreen */,
+				518A598128C4F17E00074682 /* FavoritesNewsScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -162,6 +169,16 @@
 				518A597F28C4EDBB00074682 /* ViewedNewsPresenter.swift */,
 			);
 			path = ViewedNewsScreen;
+			sourceTree = "<group>";
+		};
+		518A598128C4F17E00074682 /* FavoritesNewsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				518A598228C4F1D000074682 /* FavoritesNewsViewController.swift */,
+				518A598328C4F1D000074682 /* FavoritesNewsViewController.xib */,
+				518A598628C4F1E800074682 /* FavoritesNewsPresenter.swift */,
+			);
+			path = FavoritesNewsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				518A597728C4E78F00074682 /* SharedNewsViewController.xib in Resources */,
+				518A598528C4F1D000074682 /* FavoritesNewsViewController.xib in Resources */,
 				518A596B28C483B100074682 /* EmailedNewsViewController.xib in Resources */,
 				518A595728C3AC7400074682 /* LaunchScreen.storyboard in Resources */,
 				518A595428C3AC7400074682 /* Assets.xcassets in Resources */,
@@ -237,12 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518A598428C4F1D000074682 /* FavoritesNewsViewController.swift in Sources */,
 				518A596528C3B55400074682 /* UIViewController & Child.swift in Sources */,
 				518A595228C3AC7200074682 /* MyFirstTestProject.xcdatamodeld in Sources */,
 				518A594828C3AC7200074682 /* AppDelegate.swift in Sources */,
 				518A597628C4E78F00074682 /* SharedNewsViewController.swift in Sources */,
 				518A597D28C4EDA200074682 /* ViewedNewsViewController.swift in Sources */,
 				518A598028C4EDBB00074682 /* ViewedNewsPresenter.swift in Sources */,
+				518A598728C4F1E800074682 /* FavoritesNewsPresenter.swift in Sources */,
 				518A597028C48B0200074682 /* AppAssembler.swift in Sources */,
 				518A596A28C483B100074682 /* EmailedNewsViewController.swift in Sources */,
 				518A597228C4E58D00074682 /* Navigator.swift in Sources */,

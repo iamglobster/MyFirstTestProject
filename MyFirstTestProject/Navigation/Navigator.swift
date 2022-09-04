@@ -12,6 +12,7 @@ protocol NavigatorProtocol {
     func addInstantiateEmailedNewsVC() -> UINavigationController
     func addInstantiateSharedNewsVC() -> UINavigationController
     func addInstantiateViewedNewsVC() -> UINavigationController
+    func addInstantiateFavoritesNewsVC() -> UINavigationController
 }
 
 // MARK: - Navigator
@@ -31,5 +32,9 @@ class Navigator: NavigatorProtocol {
     
     func addInstantiateViewedNewsVC() -> UINavigationController {
         appAssembler.instantiateViewedNewsVC()
+    }
+    
+    func addInstantiateFavoritesNewsVC() -> UINavigationController {
+        appAssembler.instantiateFavoritesNewsVC()
     }
 }

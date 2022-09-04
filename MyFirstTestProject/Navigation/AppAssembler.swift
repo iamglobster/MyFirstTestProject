@@ -54,4 +54,19 @@ class AppAssembler {
         return navigationVC
     }
     
+    func instantiateFavoritesNewsVC() -> UINavigationController {
+        let presenter = FavoritesNewsPresenter()
+        let favoritesNewsVC = FavoritesNewsViewController(presenter: presenter)
+        presenter.set(delegate: favoritesNewsVC)
+        let navigationVC = UINavigationController(rootViewController: favoritesNewsVC)
+        let appearance = UINavigationBarAppearance()
+        navigationVC.navigationBar.scrollEdgeAppearance = appearance
+        
+        favoritesNewsVC.tabBarItem = UITabBarItem(title: "Favorites",
+                                               image: UIImage(systemName: "heart"),
+                                               selectedImage: UIImage(systemName: "heart.fill"))
+        
+        return navigationVC
+    }
+    
 }
