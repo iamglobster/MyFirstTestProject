@@ -1,5 +1,5 @@
 //
-//  UIViewController & Child.swift
+//  UIViewController+Child.swift
 //  MyFirstTestProject
 //
 //  Created by Yaroslav on 03.09.2022.

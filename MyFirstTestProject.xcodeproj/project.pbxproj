@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		476E627A41240012831F6019 /* Pods_MyFirstTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AD9B16EF4ED116A9CB5829 /* Pods_MyFirstTestProject.framework */; };
 		518A594828C3AC7200074682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A594728C3AC7200074682 /* AppDelegate.swift */; };
 		518A595228C3AC7200074682 /* MyFirstTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 518A595028C3AC7200074682 /* MyFirstTestProject.xcdatamodeld */; };
 		518A595428C3AC7400074682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518A595328C3AC7400074682 /* Assets.xcassets */; };
 		518A595728C3AC7400074682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518A595528C3AC7400074682 /* LaunchScreen.storyboard */; };
 		518A596228C3AF5A00074682 /* FlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A596128C3AF5A00074682 /* FlowViewController.swift */; };
-		518A596528C3B55400074682 /* UIViewController & Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A596428C3B55400074682 /* UIViewController & Child.swift */; };
+		518A596528C3B55400074682 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A596428C3B55400074682 /* UIViewController+Child.swift */; };
 		518A596A28C483B100074682 /* EmailedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A596828C483B100074682 /* EmailedNewsViewController.swift */; };
 		518A596B28C483B100074682 /* EmailedNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518A596928C483B100074682 /* EmailedNewsViewController.xib */; };
 		518A596D28C483D500074682 /* EmailedNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A596C28C483D500074682 /* EmailedNewsPresenter.swift */; };
@@ -27,9 +28,20 @@
 		518A598428C4F1D000074682 /* FavoritesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A598228C4F1D000074682 /* FavoritesNewsViewController.swift */; };
 		518A598528C4F1D000074682 /* FavoritesNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518A598328C4F1D000074682 /* FavoritesNewsViewController.xib */; };
 		518A598728C4F1E800074682 /* FavoritesNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A598628C4F1E800074682 /* FavoritesNewsPresenter.swift */; };
+		518A598B28C5017E00074682 /* DetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A598928C5017E00074682 /* DetailedInfoViewController.swift */; };
+		518A598C28C5017E00074682 /* DetailedInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518A598A28C5017E00074682 /* DetailedInfoViewController.xib */; };
+		518A598E28C501A100074682 /* DetailedInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A598D28C501A100074682 /* DetailedInfoPresenter.swift */; };
+		518A599428C607C200074682 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A599228C607C200074682 /* NewsCell.swift */; };
+		518A599528C607C200074682 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518A599328C607C200074682 /* NewsCell.xib */; };
+		518A599828C60B3300074682 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A599728C60B3300074682 /* News.swift */; };
+		518A599A28C60B8700074682 /* FavoriteNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A599928C60B8700074682 /* FavoriteNews.swift */; };
+		518A599D28C6118D00074682 /* AlamofireNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A599C28C6118D00074682 /* AlamofireNetwork.swift */; };
+		518A599F28C6119C00074682 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A599E28C6119C00074682 /* API.swift */; };
+		518A59A128C76B6C00074682 /* UIView+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A59A028C76B6C00074682 /* UIView+ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E18D278659C5349C59C3330 /* Pods-MyFirstTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstTestProject.release.xcconfig"; path = "Target Support Files/Pods-MyFirstTestProject/Pods-MyFirstTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		518A594428C3AC7200074682 /* MyFirstTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A594728C3AC7200074682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518A595128C3AC7200074682 /* MyFirstTestProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFirstTestProject.xcdatamodel; sourceTree = "<group>"; };
@@ -37,7 +49,7 @@
 		518A595628C3AC7400074682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518A595828C3AC7400074682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518A596128C3AF5A00074682 /* FlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowViewController.swift; sourceTree = "<group>"; };
-		518A596428C3B55400074682 /* UIViewController & Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController & Child.swift"; sourceTree = "<group>"; };
+		518A596428C3B55400074682 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		518A596828C483B100074682 /* EmailedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedNewsViewController.swift; sourceTree = "<group>"; };
 		518A596928C483B100074682 /* EmailedNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailedNewsViewController.xib; sourceTree = "<group>"; };
 		518A596C28C483D500074682 /* EmailedNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedNewsPresenter.swift; sourceTree = "<group>"; };
@@ -52,6 +64,18 @@
 		518A598228C4F1D000074682 /* FavoritesNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNewsViewController.swift; sourceTree = "<group>"; };
 		518A598328C4F1D000074682 /* FavoritesNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesNewsViewController.xib; sourceTree = "<group>"; };
 		518A598628C4F1E800074682 /* FavoritesNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNewsPresenter.swift; sourceTree = "<group>"; };
+		518A598928C5017E00074682 /* DetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoViewController.swift; sourceTree = "<group>"; };
+		518A598A28C5017E00074682 /* DetailedInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedInfoViewController.xib; sourceTree = "<group>"; };
+		518A598D28C501A100074682 /* DetailedInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoPresenter.swift; sourceTree = "<group>"; };
+		518A599228C607C200074682 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		518A599328C607C200074682 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		518A599728C60B3300074682 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		518A599928C60B8700074682 /* FavoriteNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNews.swift; sourceTree = "<group>"; };
+		518A599C28C6118D00074682 /* AlamofireNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetwork.swift; sourceTree = "<group>"; };
+		518A599E28C6119C00074682 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		518A59A028C76B6C00074682 /* UIView+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		871837C7B06BEC2282F54617 /* Pods-MyFirstTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstTestProject.debug.xcconfig"; path = "Target Support Files/Pods-MyFirstTestProject/Pods-MyFirstTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B7AD9B16EF4ED116A9CB5829 /* Pods_MyFirstTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476E627A41240012831F6019 /* Pods_MyFirstTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +95,8 @@
 			children = (
 				518A594628C3AC7200074682 /* MyFirstTestProject */,
 				518A594528C3AC7200074682 /* Products */,
+				8536E6DCB8F628CD1CDDE345 /* Pods */,
+				D83BDEC6307494800AFB247A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +111,8 @@
 		518A594628C3AC7200074682 /* MyFirstTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				518A599B28C6117300074682 /* Networking */,
+				518A599628C60B2300074682 /* Models */,
 				518A596628C4837300074682 /* Screens */,
 				518A596028C3AF1500074682 /* Navigation */,
 				518A596328C3B52400074682 /* Extensions */,
@@ -125,7 +154,8 @@
 		518A596328C3B52400074682 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				518A596428C3B55400074682 /* UIViewController & Child.swift */,
+				518A596428C3B55400074682 /* UIViewController+Child.swift */,
+				518A59A028C76B6C00074682 /* UIView+ActivityIndicator.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -133,10 +163,12 @@
 		518A596628C4837300074682 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				518A599128C6079500074682 /* Cell */,
 				518A596728C4837D00074682 /* EmailedNewsScreen */,
 				518A597328C4E75400074682 /* SharedNewsScreen */,
 				518A597A28C4ED5600074682 /* ViewedNewsScreen */,
 				518A598128C4F17E00074682 /* FavoritesNewsScreen */,
+				518A598828C5012D00074682 /* DetailedInfoScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -181,6 +213,60 @@
 			path = FavoritesNewsScreen;
 			sourceTree = "<group>";
 		};
+		518A598828C5012D00074682 /* DetailedInfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				518A598928C5017E00074682 /* DetailedInfoViewController.swift */,
+				518A598A28C5017E00074682 /* DetailedInfoViewController.xib */,
+				518A598D28C501A100074682 /* DetailedInfoPresenter.swift */,
+			);
+			path = DetailedInfoScreen;
+			sourceTree = "<group>";
+		};
+		518A599128C6079500074682 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				518A599228C607C200074682 /* NewsCell.swift */,
+				518A599328C607C200074682 /* NewsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		518A599628C60B2300074682 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				518A599728C60B3300074682 /* News.swift */,
+				518A599928C60B8700074682 /* FavoriteNews.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		518A599B28C6117300074682 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				518A599C28C6118D00074682 /* AlamofireNetwork.swift */,
+				518A599E28C6119C00074682 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8536E6DCB8F628CD1CDDE345 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				871837C7B06BEC2282F54617 /* Pods-MyFirstTestProject.debug.xcconfig */,
+				3E18D278659C5349C59C3330 /* Pods-MyFirstTestProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D83BDEC6307494800AFB247A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7AD9B16EF4ED116A9CB5829 /* Pods_MyFirstTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 518A595B28C3AC7400074682 /* Build configuration list for PBXNativeTarget "MyFirstTestProject" */;
 			buildPhases = (
+				59E000FB931A858D3227C60C /* [CP] Check Pods Manifest.lock */,
 				518A594028C3AC7200074682 /* Sources */,
 				518A594128C3AC7200074682 /* Frameworks */,
 				518A594228C3AC7200074682 /* Resources */,
+				0164A526105461B69543E961 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +329,8 @@
 			files = (
 				518A597728C4E78F00074682 /* SharedNewsViewController.xib in Resources */,
 				518A598528C4F1D000074682 /* FavoritesNewsViewController.xib in Resources */,
+				518A599528C607C200074682 /* NewsCell.xib in Resources */,
+				518A598C28C5017E00074682 /* DetailedInfoViewController.xib in Resources */,
 				518A596B28C483B100074682 /* EmailedNewsViewController.xib in Resources */,
 				518A595728C3AC7400074682 /* LaunchScreen.storyboard in Resources */,
 				518A595428C3AC7400074682 /* Assets.xcassets in Resources */,
@@ -250,24 +340,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0164A526105461B69543E961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFirstTestProject/Pods-MyFirstTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFirstTestProject/Pods-MyFirstTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyFirstTestProject/Pods-MyFirstTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E000FB931A858D3227C60C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFirstTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		518A594028C3AC7200074682 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				518A598428C4F1D000074682 /* FavoritesNewsViewController.swift in Sources */,
-				518A596528C3B55400074682 /* UIViewController & Child.swift in Sources */,
+				518A596528C3B55400074682 /* UIViewController+Child.swift in Sources */,
 				518A595228C3AC7200074682 /* MyFirstTestProject.xcdatamodeld in Sources */,
 				518A594828C3AC7200074682 /* AppDelegate.swift in Sources */,
 				518A597628C4E78F00074682 /* SharedNewsViewController.swift in Sources */,
+				518A598B28C5017E00074682 /* DetailedInfoViewController.swift in Sources */,
+				518A598E28C501A100074682 /* DetailedInfoPresenter.swift in Sources */,
 				518A597D28C4EDA200074682 /* ViewedNewsViewController.swift in Sources */,
 				518A598028C4EDBB00074682 /* ViewedNewsPresenter.swift in Sources */,
 				518A598728C4F1E800074682 /* FavoritesNewsPresenter.swift in Sources */,
 				518A597028C48B0200074682 /* AppAssembler.swift in Sources */,
 				518A596A28C483B100074682 /* EmailedNewsViewController.swift in Sources */,
+				518A599828C60B3300074682 /* News.swift in Sources */,
+				518A59A128C76B6C00074682 /* UIView+ActivityIndicator.swift in Sources */,
+				518A599F28C6119C00074682 /* API.swift in Sources */,
 				518A597228C4E58D00074682 /* Navigator.swift in Sources */,
+				518A599428C607C200074682 /* NewsCell.swift in Sources */,
 				518A596228C3AF5A00074682 /* FlowViewController.swift in Sources */,
+				518A599A28C60B8700074682 /* FavoriteNews.swift in Sources */,
 				518A597928C4E81400074682 /* SharedNewsPresenter.swift in Sources */,
+				518A599D28C6118D00074682 /* AlamofireNetwork.swift in Sources */,
 				518A596D28C483D500074682 /* EmailedNewsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +542,7 @@
 		};
 		518A595C28C3AC7400074682 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871837C7B06BEC2282F54617 /* Pods-MyFirstTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -430,6 +571,7 @@
 		};
 		518A595D28C3AC7400074682 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E18D278659C5349C59C3330 /* Pods-MyFirstTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

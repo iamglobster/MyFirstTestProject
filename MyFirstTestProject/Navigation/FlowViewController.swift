@@ -44,9 +44,10 @@ private extension FlowViewController {
         tabBarVC.delegate = self
         tabBarVC.viewControllers = [emailedNewsVC, sharedNewsVC, viewedNewsVC, favoritesVC]
         tabBarVC.tabBar.tintColor = .black
-        //tabBarVC.tabBar.unselectedItemTintColor = .red
         
         addChild(tabBarVC, toContainer: view)
+        
     }
+    
 }
 

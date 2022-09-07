@@ -31,11 +31,34 @@ class FavoritesNewsViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
     }
 
 }
 
+// MARK: - Private Extension
+private extension FavoritesNewsViewController {
+    
+    func setupUI() {
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Your favorites news"
+        
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithTransparentBackground()
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+        navBarAppearance.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.25, alpha: 0.8)
+        
+        navigationController?.navigationBar.standardAppearance = navBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+    }
+}
+
+// MARK: - Extension
 extension FavoritesNewsViewController: FavoritesNewsViewControllerProtocol {
     
 }
