@@ -21,7 +21,7 @@ class EmailedNewsViewController: UIViewController {
     // MARK: - Properties
     private lazy var dataSource = configureDataSource()
     private let presenter: EmailedNewsPresenterProtocol
-    private var cellType: String = String(describing: NewsCell.self)
+    private let cellType: String = String(describing: NewsCell.self)
     
     // MARK: - Init
     init(presenter: EmailedNewsPresenterProtocol) {

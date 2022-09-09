@@ -21,8 +21,8 @@ class FavoritesNewsViewController: UIViewController {
     
     // MARK: - Properties
     private lazy var dataSource = configureDataSource()
+    private let cellType: String = String(describing: FavoritesNewsCell.self)
     private var presenter: FavoritesNewsPresenterProtocol
-    private var cellType: String = String(describing: FavoritesNewsCell.self)
     
     // MARK: - Init
     init(presenter: FavoritesNewsPresenterProtocol) {

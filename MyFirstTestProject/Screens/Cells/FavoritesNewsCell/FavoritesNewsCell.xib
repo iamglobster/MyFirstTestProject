@@ -29,14 +29,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSi-vF-NCO">
-                        <rect key="frame" x="161" y="21" width="30" height="27.5"/>
+                        <rect key="frame" x="141" y="21" width="50" height="47.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="1Jj-Ic-uw0"/>
-                            <constraint firstAttribute="width" constant="30" id="Rgg-ND-PrC"/>
+                            <constraint firstAttribute="height" constant="50" id="1Jj-Ic-uw0"/>
+                            <constraint firstAttribute="width" constant="50" id="Rgg-ND-PrC"/>
                         </constraints>
                         <imageReference key="image" image="delete.right" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
                             <hierarchicalColors>
-                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>

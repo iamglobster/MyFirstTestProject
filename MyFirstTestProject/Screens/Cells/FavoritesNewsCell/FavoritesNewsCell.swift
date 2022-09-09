@@ -49,9 +49,6 @@ private extension FavoritesNewsCell {
         deleteNewsImageView.addGestureRecognizer(gesture)
         deleteNewsImageView.isUserInteractionEnabled = true
         deleteNewsImageView.clipsToBounds = true
-        deleteNewsImageView.image?.withRenderingMode(.alwaysTemplate)
-        deleteNewsImageView.image?.withTintColor(.yellow)
-        deleteNewsImageView.backgroundColor = .clear
     }
     
     @objc

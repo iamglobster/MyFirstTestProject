@@ -21,11 +21,6 @@ class DetailedInfoViewController: UIViewController {
     @IBOutlet weak var titleDetailedLabel: UILabel!
     @IBOutlet weak var favoritesNewsButton: UIButton!
     
-    // MARK: - Action
-    @IBAction func saveNewsAction(_ sender: Any) {
-        presenter.createNews()
-    }
-    
     // MARK: - Properties
     private var presenter: DetailedInfoPresenterProtocol
     
@@ -43,6 +38,11 @@ class DetailedInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    // MARK: - Action
+    @IBAction func saveNewsAction(_ sender: Any) {
+        presenter.createNews()
     }
 }
 
@@ -62,7 +62,7 @@ private extension DetailedInfoViewController {
     }
     
     func setupNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Your favorites news"
     }
     
