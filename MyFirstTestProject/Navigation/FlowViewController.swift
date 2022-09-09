@@ -17,6 +17,7 @@ class FlowViewController: UIViewController, UITabBarControllerDelegate {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUIAppearanceCustomNavBar(type: .defaultAppear)
         setupTabBarVC()
     }
 }
@@ -46,8 +47,6 @@ private extension FlowViewController {
         tabBarVC.tabBar.tintColor = .black
         
         addChild(tabBarVC, toContainer: view)
-        
     }
-    
 }
 

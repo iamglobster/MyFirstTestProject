@@ -15,11 +15,9 @@ enum API {
     
     var stringValue: String {
         switch self {
-            
         case .getEmailedNews(let period): return "/emailed/\(period).json?"
         case .getSharedNews(let period): return "/shared/\(period).json?"
         case .getViewedNews(let period): return "/viewed/\(period).json?"
-            
         }
     }
 }

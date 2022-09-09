@@ -41,13 +41,13 @@ class EmailedNewsPresenter: EmailedNewsPresenterProtocol {
     }
     
     func getNews(period: Int) {
-        networkService.getNews(with: API.getEmailedNews(period).stringValue) { model in
+        networkService.getNews(with: API.getEmailedNews(period).stringValue) { (model: News) in
             guard let news = model.results else { return }
             self.news = news
         }
     }
-    
+
     func showDetailedInfoVC(view: UIViewController, news: Result) {
-        navigator.addInstantiateDetailedInfoVC(view: view, news: news)
+        navigator.showDetailedInfoVC(view: view, news: news)
     }
 }

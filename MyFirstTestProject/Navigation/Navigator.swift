@@ -13,7 +13,7 @@ protocol NavigatorProtocol {
     func addInstantiateSharedNewsVC() -> UINavigationController
     func addInstantiateViewedNewsVC() -> UINavigationController
     func addInstantiateFavoritesNewsVC() -> UINavigationController
-    func addInstantiateDetailedInfoVC(view: UIViewController, news: Result)
+    func showDetailedInfoVC(view: UIViewController, news: Result)
 }
 
 // MARK: - Navigator
@@ -21,26 +21,26 @@ class Navigator: NavigatorProtocol {
     
     // MARK: - Properties
     private let appAssembler = AppAssembler()
-    private let networkService = AlamofireNetwork()
+   
     
     // MARK: - Methods
     func addInstantiateEmailedNewsVC() -> UINavigationController {
-        appAssembler.instantiateEmailedNewsVC(networkService: networkService, navigator: self)
+        appAssembler.instantiateEmailedNewsVC(navigator: self)
     }
     
     func addInstantiateSharedNewsVC() -> UINavigationController {
-        appAssembler.instantiateSharedNewsVC(networkService: networkService, navigator: self)
+        appAssembler.instantiateSharedNewsVC(navigator: self)
     }
     
     func addInstantiateViewedNewsVC() -> UINavigationController {
-        appAssembler.instantiateViewedNewsVC(networkService: networkService, navigator: self)
+        appAssembler.instantiateViewedNewsVC(navigator: self)
     }
     
     func addInstantiateFavoritesNewsVC() -> UINavigationController {
-        appAssembler.instantiateFavoritesNewsVC()
+        appAssembler.instantiateFavoritesNewsVC(navigator: self)
     }
     
-    func addInstantiateDetailedInfoVC(view: UIViewController, news: Result) {
+    func showDetailedInfoVC(view: UIViewController, news: Result) {
         let detailedInfo = appAssembler.instantiateDetailedInfoVC(navigator: self, news: news)
         view.navigationController?.pushViewController(detailedInfo, animated: true)
     }

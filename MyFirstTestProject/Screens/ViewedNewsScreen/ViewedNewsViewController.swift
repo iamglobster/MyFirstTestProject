@@ -19,9 +19,9 @@ class ViewedNewsViewController: UIViewController {
     @IBOutlet weak var viewedCollectionView: UICollectionView!
     
     // MARK: - Properties
-    private lazy var cellType: String = String(describing: NewsCell.self)
     private lazy var dataSource = configureDataSource()
     private let presenter: ViewedNewsPresenterProtocol
+    private var cellType: String = String(describing: NewsCell.self)
     
     // MARK: - Init
     init(presenter: ViewedNewsPresenterProtocol) {
@@ -40,7 +40,6 @@ class ViewedNewsViewController: UIViewController {
         view.showActivityIndicator()
         presenter.getNews(period: 30)
     }
-
 }
 
 // MARK: - Private Extension
@@ -54,15 +53,6 @@ private extension ViewedNewsViewController {
     func setupNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Viewed news"
-        
-        let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.configureWithTransparentBackground()
-        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-        navBarAppearance.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.25, alpha: 0.8)
-        
-        navigationController?.navigationBar.standardAppearance = navBarAppearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
     }
     
     func setupCollectionView() {
@@ -71,6 +61,7 @@ private extension ViewedNewsViewController {
         viewedCollectionView.register(.init(nibName: cellType, bundle: nil), forCellWithReuseIdentifier: cellType)
         
         viewedCollectionView.collectionViewLayout = createLayout()
+        viewedCollectionView.showsHorizontalScrollIndicator = false
     }
     
     func animateOpacity() {

@@ -23,11 +23,11 @@ class DetailedInfoViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func saveNewsAction(_ sender: Any) {
-        
+        presenter.createNews()
     }
     
     // MARK: - Properties
-    private let presenter: DetailedInfoPresenterProtocol
+    private var presenter: DetailedInfoPresenterProtocol
     
     // MARK: - Init
     init(presenter: DetailedInfoPresenterProtocol) {
@@ -62,33 +62,23 @@ private extension DetailedInfoViewController {
     }
     
     func setupNavigationBar() {
-        //navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.title = "Your favorites news"
     }
     
     func setupNewsDetailedImageView() {
         newsDetailedImageView.layer.cornerRadius = 10
         newsDetailedImageView.contentMode = .scaleAspectFill
-        
-        if presenter.news.isFavoreiteNews == true, let data = presenter.news.image {
-            //title = "Detail news"
-            titleDetailedLabel.text = presenter.news.title
-            newsDetailedImageView.image = UIImage(data: data)
-        } else {
-            titleDetailedLabel.text = presenter.news.title
-            presenter.news.media?.forEach { media in
-                media.mediametadata?.forEach {
-                    guard let image = $0.url, let url = URL(string: image) else { return }
-                    DispatchQueue.main.async {
-                        self.newsDetailedImageView.kf.setImage(with: url)
-                    }
+
+        titleDetailedLabel.text = presenter.news.title
+        presenter.news.media?.forEach { media in
+            media.mediametadata?.forEach {
+                guard let image = $0.url, let url = URL(string: image) else { return }
+                self.presenter.news.url = url
+                DispatchQueue.main.async {
+                    self.newsDetailedImageView.kf.setImage(with: url)
                 }
             }
         }
     }
-}
-
-// MARK: - Extension
-extension DetailedInfoViewController: DetailedInfoViewControllerProtocol {
-    
 }

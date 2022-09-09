@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qxj-jx-1ZF" customClass="FavoritesNewsCell" customModule="MyFirstTestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="273"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKX-Ym-97d">
+                        <rect key="frame" x="10" y="10" width="187" height="219"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi9-2c-46D">
+                        <rect key="frame" x="10" y="239" width="187" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSi-vF-NCO">
+                        <rect key="frame" x="161" y="21" width="30" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1Jj-Ic-uw0"/>
+                            <constraint firstAttribute="width" constant="30" id="Rgg-ND-PrC"/>
+                        </constraints>
+                        <imageReference key="image" image="delete.right" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="tBb-gy-vPh"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fi9-2c-46D" secondAttribute="trailing" constant="10" id="0Z5-Ej-1MK"/>
+                <constraint firstItem="fi9-2c-46D" firstAttribute="leading" secondItem="Qxj-jx-1ZF" secondAttribute="leading" constant="10" id="3by-rC-I9G"/>
+                <constraint firstAttribute="trailing" secondItem="vSi-vF-NCO" secondAttribute="trailing" constant="16" id="5bd-lu-FuY"/>
+                <constraint firstItem="fi9-2c-46D" firstAttribute="top" secondItem="MKX-Ym-97d" secondAttribute="bottom" constant="10" id="Jd2-5r-heh"/>
+                <constraint firstItem="vSi-vF-NCO" firstAttribute="top" secondItem="Qxj-jx-1ZF" secondAttribute="top" constant="20" id="Lqg-4T-em8"/>
+                <constraint firstAttribute="bottom" secondItem="fi9-2c-46D" secondAttribute="bottom" constant="10" id="Uw8-ag-OSA"/>
+                <constraint firstAttribute="trailing" secondItem="MKX-Ym-97d" secondAttribute="trailing" constant="10" id="Zdi-6H-xNq"/>
+                <constraint firstItem="MKX-Ym-97d" firstAttribute="top" secondItem="Qxj-jx-1ZF" secondAttribute="top" constant="10" id="c5i-Ic-CM5"/>
+                <constraint firstItem="MKX-Ym-97d" firstAttribute="leading" secondItem="Qxj-jx-1ZF" secondAttribute="leading" constant="10" id="icF-Sj-FBq"/>
+            </constraints>
+            <size key="customSize" width="207" height="273"/>
+            <connections>
+                <outlet property="deleteNewsImageView" destination="vSi-vF-NCO" id="cGZ-db-Sve"/>
+                <outlet property="newsImageView" destination="MKX-Ym-97d" id="uuu-75-dqd"/>
+                <outlet property="titleLabel" destination="fi9-2c-46D" id="4Ff-6t-HAq"/>
+            </connections>
+            <point key="canvasLocation" x="250.00000000000003" y="123.54910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete.right" catalog="system" width="128" height="104"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
